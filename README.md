@@ -31,10 +31,7 @@ The following table highlights how each model reacted as we refined the feature 
 
 While XGBoost showed a slightly higher accuracy in the final iteration, it demonstrated high sensitivity to small data changes. Logistic Regression was selected due to its **consistent 91% accuracy** and its ability to provide clear, actionable coefficients for HR leadership.
 
-![Logistic Regression Coefficients](images/16_3_Logistic_Regression_Coefficients.png)
-
-![Top 5 Key Predictors XGBoost](images/18_3_Top_5_Key_Predictors_of_High_Performance_XGBoost.png)
-
+<img src="images/16_3_Logistic_Regression_Coefficients.png" alt="Logistic Regression Coefficients" width="500"> <img src="images/18_3_Top_5_Key_Predictors_of_High_Performance_XGBoost.png" alt="Top 5 Key Predictors XGBoost" width="500">
 ---
 
 ## 🏁 Conclusion & Recommendations
