@@ -10,7 +10,7 @@ This project aims to predict high-performing employees using recruitment and ass
 ---
 
 ## 🛠️ The Challenge: Mitigating Data Leakage
-In the initial phase, the model achieved a suspicious **98% accuracy**. A deep dive revealed **Proxy Data Leakage**, where technical scores and years of experience overly dominated the prediction. To build a more reliable model, I conducted **3 iterations of feature refinement**:
+In the initial phase, the model achieved a suspicious **98% accuracy**. A deep dive revealed **Proxy Data Leakage**, where interview scores, technical scores and years of experience overly dominated the prediction. To build a more reliable model, I conducted **3 iterations of feature refinement**:
 
 1.  **Iteration 1:** Baseline model (All features). 98% Accuracy (Identified as Leakage).
 2.  **Iteration 2:** Dropped `interview score`, `tech_assessment` & `years_experience`. Logistic Regression remained stable at **91%**, proving the strength of behavioral predictors.
