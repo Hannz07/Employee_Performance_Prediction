@@ -19,14 +19,15 @@ In the initial phase, the model achieved a suspicious **98% accuracy**. A deep d
 ---
 
 ## 📊 Model Performance Comparison
-After optimizing the XGBoost parameters (adjusting for the actual 58:42 data ratio without synthetic weights), the final comparison is as follows:
+The following table highlights how each model reacted as we refined the feature set to eliminate bias and leakage.
 
-| Metric | Logistic Regression (Final) | XGBoost (Final) |
-| :--- | :---: | :---: |
-| **Accuracy** | **91%** | 93% |
-| **Recall (Class 1)** | **0.95** | 1.00 |
-| **Consistency** | **High (Stable)** | Volatile (High Variance) |
-| **Interpretability** | **Excellent (Transparent)** | Complex (Black Box) |
+| Iteration | Model | Accuracy | Precision | Recall | Note |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **1** | LogReg / XGBoost | 98% | 0.95 | 1.00 | **Leakage Detected** |
+| **2** | **Logistic Regression** | **91%** | 0.87 | 0.95 | **Stable & Robust** |
+| | XGBoost | 85% | 0.82 | 0.86 | Significant Performance Drop |
+| **3** | **Logistic Regression** | **91%** | 0.87 | 0.95 | **Consistent Result** |
+| | XGBoost | 93% | 0.88 | 1.00 | Volatile Recovery |
 
 While XGBoost showed a slightly higher accuracy in the final iteration, it demonstrated high sensitivity to small data changes. Logistic Regression was selected due to its **consistent 91% accuracy** and its ability to provide clear, actionable coefficients for HR leadership.
 
